@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "striped-handler-373021",
+  "private_key_id": "887e5720fab4fe7646eb3d3b89ae8a35eb6d071d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpnQHSkGaVbswj\nmLCB0rfnFkXZrOyEHacRkAGLH/MPc1PloSgqiC2XaWgzuP3ck97Hszfg6d13bGSB\nSOulXYouSknkc5puld/wBq/wrE9Zd14CWlVSjauaYAII3ENNZUkefomGfVmrT7Ow\ngzWzGXZZeTyJ0vHjUvIk4nn2qU237HmE5uep0kAYA99LtU7VMROeKCDwlywN2my7\nXNl8ijNAXBDjaEh6AZHQjyBQvdJZxRXLqY5u09FsjKulCaFUzHujkSeAM58jDWyB\nc0A3MsQBotaax4gL7M8LOPrnBS68lEGuXCt2NX3cfhBUM0arXS91tFTmSkX5pBaY\nHo5olvZ7AgMBAAECggEACtdHCrXXELMMZ4lhXWg3VT+xBujiFHmuuCp7psWhK/oj\nlnhBUHf0GLWQhvR1KWLm04h1cwc6SWFLX+YQxbjfqvYYQ0/47XDf54AN68n0/RNq\nQKfpxIUwlC/nFrjkBlo0cmIFGUGsIw0iP48gtgn+bK6ZO3fuT6jOuE56HCrAaxfJ\nMkcpQFPFdsjhzxZLWeq1Y5TdY5+EGIYk/yDjeefcrlYDae2LjRC5yNWBtQdAZFgq\nM9pbsh4jaZZyOaNIT42Q6S0Kqmx25nnFEJCyvHK2VqCclzo/75N2l5rdd7pmdVGH\nZG1Aqa/YHD+t8siklchcucv33goWp2oaZWjMUiohaQKBgQDvO10KsQiWzqwXZFYu\nPU/47pGg04JgFf1YDUBe29V4VO7SS1xXlHc5fnw/00v/OfjJTTeyQcE+MEwsi2xK\n5DUb0aUkOusluyY5DSuUKKgeJWX3VarfYqrEZqhbPenwAqy0qzcM0kH3e3sdAc89\nVR1ZZW9DLIWG2qxyTMz4K6N02QKBgQC1gHLh12MXvO5CpQujU1ChYCIb5WlQv32m\nDkMbfqJW5zp+ZCmiSTZHzkWcJB4aKhUNnaZ/UtyjsScnytZKJ9TWcxWxTrpCsPxy\nNXqC7YCBdLEeorLhHx/JXjQ2q3JxzgrpzCxq3VPYGq5gNd1rKn6MuecTIX5Mw8IQ\n1/kO3vWhcwKBgBN3nDGjiFRlSwG4S38FxD04hKc2rvRMtcn1ghh2ASACoVCBi2kh\nDraiAVBcTGHfgMw4uWCLE0ORQJGbYtuRSHUUEUEqfjoayZh45uPujwes+WgwE3CM\nIeNLi0WpeyDpxs4I5LjpXy7ZYIJSxF90TqgYpf4sYE1B/Chs8Xz8aBe5AoGAOr7k\ncCyiqiBAjdmVtrtUsabH43eRas1QAdtD5TZLnQ0iZZ5Ny3Ue2IbvCOa3x4gvYETS\niwtq1qCUJ9EDIuVZgj+lmcn9h3B5hQ3CJXZxzXTTjzLh6vOD+k0/YSKE3EjwR1QK\nXFxesueP4RwOGo2agDn7jLmeg4Io4gLFXgbUQfkCgYEA31n/dqsmhWsynwWcdZbd\na0HK7LQwUwNZYOtMKjA4f3qZ3wh9a4Ch+GLLp2NCp9V6W7eZOdbwjyfI+C3aVXom\nEs3gsHyITqKo4FAX3Zr1ckOz5tveuRjYnLXnNVWmHm3NhwKMu+tqvr8b+Dw2M7xu\n1AJQLOlD2+dmSyO23yz+92M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "starcamp-databases@striped-handler-373021.iam.gserviceaccount.com",
+  "client_id": "109074259482897616457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starcamp-databases%40striped-handler-373021.iam.gserviceaccount.com"
+}
