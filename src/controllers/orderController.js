@@ -6,13 +6,24 @@ const {
 } = require("../models/orderModel");
 
 exports.getAllOrder = (req, res) => {
-  const querySql = "SELECT * FROM orders";
+  const querySql =
+    "SELECT * FROM orders INNER JOIN users on orders.id_user=users.id_user";
   getOrder(res, querySql);
 };
 
 exports.getOrderByUser = (req, res) => {
   const id = req.params.id;
-  const querySql = `SELECT * FROM orders WHERE id_user = ${id}`;
+  const querySql = `SELECT * FROM orders INNER JOIN users ON orders.id_user=users.id_user WHERE orders.id_user = ${id}`;
+  getOrder(res, querySql);
+};
+
+exports.getOrderPembayaran = (req, res) => {
+  const querySql = `SELECT * FROM orders INNER JOIN users ON orders.id_user=users.id_user WHERE order_status = "Menunggu pembayaran"`;
+  getOrder(res, querySql);
+};
+
+exports.getOrderPembatalan = (req, res) => {
+  const querySql = `SELECT * FROM orders INNER JOIN users ON orders.id_user=users.id_user WHERE order_status = "Menunggu verifikasi pembatalan"`;
   getOrder(res, querySql);
 };
 

@@ -23,7 +23,7 @@ exports.getPayDetailByIdPay = (req, res) => {
 
 exports.getPayDetailByIdOrder = (req, res) => {
   const id = req.params.id;
-  const querySql = `SELECT * FROM paymentdetails WHERE id_order = ${id}`;
+  const querySql = `SELECT * FROM paymentdetails INNER JOIN payments ON paymentdetails.id_payment_detail=payments.id_payment_detail WHERE id_order = ${id}`;
   getPayDetail(res, querySql);
 };
 
