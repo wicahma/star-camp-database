@@ -4,6 +4,11 @@ const {
   updateProduct,
   insertProduct,
 } = require("../models/productModel");
+const fs = require("fs");
+const {
+  authenticateGoogle,
+  uploadToGoogleDrive,
+} = require("../services/googleDriveServices");
 
 exports.getProduct = (req, res) => {
   const querySql = "SELECT * FROM products";
@@ -23,10 +28,29 @@ exports.updateProduct = (req, res) => {
   updateProduct(res, querySearch, queryUpdate, req.params.id, data);
 };
 
-exports.createProduct = (req, res) => {
+const deleteFile = (filePath) => {
+  fs.unlink(filePath, () => {
+    console.log("file deleted");
+  });
+};
+
+exports.createProduct = async (req, res) => {
   const data = { ...req.body };
+  let product = JSON.parse(data.product);
+  try {
+    if (!req.file) {
+      res.status(400).send("No file uploaded.");
+      return;
+    }
+    const auth = authenticateGoogle();
+    const response = await uploadToGoogleDrive(req.file, auth);
+    product.image = response.data.id;
+    deleteFile(req.file.path);
+  } catch (err) {
+    console.log(err);
+  }
   const querySql = "INSERT INTO products SET ?";
-  insertProduct(res, querySql, data);
+  insertProduct(res, querySql, product);
 };
 
 exports.deleteproduct = (req, res) => {
