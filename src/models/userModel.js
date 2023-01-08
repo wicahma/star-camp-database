@@ -1,23 +1,17 @@
 const db = require("../configs/db");
 
 exports.getUser = (res, state) => {
+  
   db.query(state, (err, rows) => {
     if (err) {
-      return res.status(404).json({
-        message: "Data user gagal diambil!",
-        error: err,
-      });
+      return res.status(404).json(err);
     } else {
       if (rows.length === 0) {
         return res.status(404).json({
           message: "Data user Tidak ada!",
-          data: err,
         });
       } else {
-        return res.status(200).json({
-          message: "Data user berhasil diambil cuy!",
-          data: rows,
-        });
+        return res.status(200).json(rows);
       }
     }
   });

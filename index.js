@@ -26,6 +26,7 @@ app.use(mainPath, orderDetailRoute);
 app.use(mainPath, paymentRoute);
 app.use(mainPath, paymentDetailRoute);
 
-app.listen(PORT, () => {
+app.listen(PORT, (data) => {
   console.log("listening on port", PORT);
+  console.log("Waiting to connect to MySQL Server...");
 });
