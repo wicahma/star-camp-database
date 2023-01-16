@@ -16,6 +16,12 @@ exports.getOrderByUser = (req, res) => {
   getOrder(res, querySql);
 };
 
+exports.getOrderByID = (req, res) => {
+  const id = req.params.id;
+  const querySql = `SELECT * FROM orders INNER JOIN users ON orders.id_user=users.id_user WHERE orders.id_order = ${id}`;
+  getOrder(res, querySql);
+};
+
 exports.getOrderPembatalan = (req, res) => {
   const querySql = `SELECT * FROM orders INNER JOIN users ON orders.id_user=users.id_user WHERE order_status = "Selesai" OR order_status = "Dibatalkan"`;
   getOrder(res, querySql);
